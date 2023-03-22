@@ -7,6 +7,7 @@
     "example": "examples"
   },
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +27,12 @@
   },
   "homepage": "https://github.com/laibaaac/pwa_minor#readme",
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "nodemon": "^2.0.21"
   }
 }
