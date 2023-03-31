@@ -13,12 +13,12 @@
     <%- include('partials/header.ejs'); %> 
    
     <main>
-        <img src="img/notepad.svg" alt="een kladblokje">
+        <!-- <img src="img/notepad.svg" alt="een kladblokje"> -->
 
         <section id="quotes">
             <ul>
                 <% data.forEach(function(quote){ %>
-                  <li><%- quote.quote %></li>
+                  <li><%- quote.text %></li>
                 <% }); %>
               </ul>
         </section>

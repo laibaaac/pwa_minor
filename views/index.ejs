@@ -19,7 +19,7 @@
         <h1>Author</h1>
         <ul>
             <% data.forEach(function(quote){ %>
-                <a href="/quotes/<%= quote.id %>">
+                <a href="/quotes/<%= quote.authorId %>">
                     <li><%- quote.author %></li>
                 </a>
             <% }); %>

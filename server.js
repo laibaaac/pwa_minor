@@ -36,9 +36,8 @@ app.get('/quotes/:id', (req, res) => {
     let data;
     axios.get('https://opensheet.elk.sh/1W7nmmrM1C2uX6_nRSsXP5x3A7R1A9b5P6Q-fJhtwLQ8/blad1')
       .then((response) => {
-        console.log('result', response.data);
         data = response.data;
-        const filteredQuotes = data.filter(quote => quote.id === req.params.id); 
+        const filteredQuotes = data.filter(quote => quote.quoteId === req.params.id); 
         res.render('quotes', {
           title: 'Random Quote',
           data: filteredQuotes 
@@ -50,7 +49,7 @@ app.get('/quotes/:id', (req, res) => {
   });
 
   app.get('/about', (req, res) => {
-
+    
     res.render('about', {
         title: 'About',
     });
@@ -66,3 +65,6 @@ app.listen(port, () => {
 // app.use( (req, res) => {
 //     res.status(404).send('error 404: file not found');
 // });
+
+
+module.exports = app;

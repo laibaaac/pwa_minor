@@ -110,3 +110,9 @@ button{
 .hide {
     display: none;
 }
+
+#quotes ul li{
+    position: relative;
+    top: 10em;
+}
+
