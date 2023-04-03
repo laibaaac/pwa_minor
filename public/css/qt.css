@@ -95,7 +95,6 @@ img{
 }
 button{
     position: relative;
-
     left: 50%;
     width : 280px;
     height : 80px;
@@ -104,7 +103,6 @@ button{
     border-radius : 40px ;
     background-color: rgb(219,112,147) ;
     transform: translate( -60% , 80% );
-
 }
 
 .hide {

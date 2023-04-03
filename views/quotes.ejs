@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quotes</title>
     <link rel="stylesheet" href="/public/css/qt.css">
-    <!-- <script type="module" src="server.js"></script> -->
+    <link rel="stylesheet" href="/public/manifest.json">
+    <meta name="theme-color" content="#E0B0FF">
 </head>
 <body>
 
     <%- include('partials/header.ejs'); %> 
    
     <main>
-        <!-- <img src="img/notepad.svg" alt="een kladblokje"> -->
+        <img src="/public/img/notepad.svg" alt="een kladblokje">
 
         <section id="quotes">
             <ul>
@@ -24,6 +25,6 @@
         </section>
         
        
-
+        <%- include('partials/footer.ejs'); %>
 </body>
 </html>

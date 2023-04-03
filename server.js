@@ -49,11 +49,20 @@ app.get('/quotes/:id', (req, res) => {
   });
 
   app.get('/about', (req, res) => {
-    
+
     res.render('about', {
         title: 'About',
     });
 })
+
+// Offline
+app.get('/offline', (req, res) => {
+
+  res.render('offline', {
+      title: 'offline',
+      pageTitle: 'You are offline'
+  });
+}); 
 
 
 
