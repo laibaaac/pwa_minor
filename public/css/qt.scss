@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+  
+    &::after, &::before {
+      box-sizing: border-box;
+    }
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background-color: #F8C8DC;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  header {
+    background-color: #E0B0FF;
+    position: fixed;
+    height: 8vmin;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: -100px;
+  }
+  
+  nav ul {
+    display: grid;
+    grid-template-columns: 5em 5em;
+    grid-template-rows: .5em;
+    gap: 8em;
+  
+    li {
+      list-style: none;
+      position: relative;
+      left: 65vmin;
+  
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+  
+        &:hover {
+          color: rgb(219, 112, 147);
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  h1, h2, h3, p, a {
+    font-family: sans-serif;
+  }
+  
+  img {
+    width: 100vmin;
+    position: absolute;
+    left: 22%;
+    top: 15%;
+  }
+  
+  #home, #about, #quotes, #offline {
+    height: fit-content;
+    width: 80vmin;
+    position: absolute;
+    padding: 0;
+    transform: translate(60%, 150%);
+  }
+  
+  #home {
+    top: -65%;
+    left: .1%;
+  
+    ul {
+      li {
+        list-style: none;
+        color: black;
+        text-decoration: none;
+      }
+  
+      a {
+        text-decoration: none;
+        line-height: 2em;
+      }
+  
+      li:hover {
+        background-color: #E0B0FF;
+      }
+    }
+  }
+  
+  #about {
+    top: -5%;
+    left: -.1%;
+    transform: translate(60%, 80%);
+  
+    p {
+      font-size: 1.2em;
+      line-height: 1.1em;
+    }
+  }
+  
+  #qoutes {
+    top: -5%;
+    left: -.1%;
+  }
+  
+  #quotes {
+    ul li {
+      list-style: none;
+      position: relative;
+      font-size: 1.45em;
+      font-weight: normal;
+      top: 2em;
+    }
+  
+    img {
+      width: 3.5em;
+      position: relative;
+      top: 15em;
+      left: -1em;
+    }
+  }
+  
+  #offline h1 {
+    /* position: absolute; */
+    text-align: center;
+    line-height: 1.1em;
+  }
+  

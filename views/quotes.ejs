@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quotes</title>
-    <link rel="stylesheet" href="/public/css/qt.css">
+    <link rel="stylesheet" href="/public/css/qt.min.css">
     <meta name="theme-color" content="#E0B0FF">
     <script type="module" src="main.js"></script>
 </head>
@@ -22,8 +22,13 @@
                   <li><%- quote.text %></li>
                 <% }); %>
               </ul>
+              
+              <a href="/"><img src="/public/img/arrow.png" alt="an arrow image, you can go back to the home page with it"></a>
+
         </section>
+      
         
+    </main>
        
         <%- include('partials/footer.ejs'); %>
 </body>

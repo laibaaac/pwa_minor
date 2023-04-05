@@ -4,6 +4,7 @@ const app = express();
 const axios = require('axios');
 const port = 3000;
 // waar het op draait 
+const minifyHTML = require('express-minify-html');
 
 app.use(express.static('public'));
 app.use('/public', express.static(__dirname + '/public/'));
@@ -14,7 +15,18 @@ app.set('view engine', 'ejs');
 // hier spreek ik mijn ejs aan 
 // data die ik wil renderen komt dan res.render dan id en parameter 
 
-
+app.use(minifyHTML({
+  override:      true,
+  exception_url: false,
+  htmlMinifier: {
+      removeComments:            true,
+      collapseWhitespace:        true,
+      collapseBooleanAttributes: true,
+      removeAttributeQuotes:     true,
+      removeEmptyAttributes:     true,
+      minifyJS:                  true
+  }
+}));
 
 app.get('/', (req, res) => {
     let data;
