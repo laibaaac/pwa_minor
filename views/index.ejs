@@ -17,14 +17,14 @@
         <img src="img/notepad.svg" alt="een kladblokje">
 
         <section id="home" class="page-content">
-        <h1>Author</h1>
-        <ul>
-            <% data.forEach(function(quote){ %>
-                <a href="/quotes/<%= quote.authorId %>">
-                    <li><%- quote.author %></li>
-                </a>
-            <% }); %>
-            </ul>
+            <h1>Author</h1>
+                <ul>
+                    <% data.forEach(function(quote){ %>
+                        <li> <a href="/quotes/<%= quote.authorId %>">
+                            <%- quote.author %>
+                        </a> </li>
+                    <% }); %>
+                </ul>
         </section>
     </main>
 

@@ -93,10 +93,10 @@ img{
    color: black;
    text-decoration: none;
 }
-#home ul a{
+#home ul li a{
     text-decoration: none;
     line-height: 2em;
-
+    color: black;
 }
 #home ul li:hover{
     background-color: #E0B0FF;
