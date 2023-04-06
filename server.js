@@ -3,11 +3,12 @@ const express = require('express');
 const app = express();
 const axios = require('axios');
 const compression = require('compression');
+let options = { maxAge: '2y' };
 const port = 3000;
 // waar het op draait 
 const minifyHTML = require('express-minify-html');
 
-app.use(express.static('public'));
+app.use(express.static('public', options));
 app.use('/public', express.static(__dirname + '/public/'));
 app.use(compression());
 // voor mijn public files
