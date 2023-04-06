@@ -350,6 +350,7 @@ module.exports = app;
 ```
 
 # Service worker
+
 ```
 const staticCacheName = 'site-static-v1';
 const assets = [
@@ -393,6 +394,9 @@ self.addEventListener("fetch", (event) => {
  ```
 
 ## manifest.json
+Manifest.json lijkt wel op een package.json, alleen de manifest is erg nodig tijdens de gebruik van mijn service worker. 
+Ik geef in de manifest.json een paar dingen mee, net als een background color en theme color voor mijn website. 
+Verder heb ik verschillende maten van de icon, zodat er een fallback is van mijn logo. 
 ```
 {
     "name": "Imposter syndrome quotes",
@@ -438,6 +442,8 @@ self.addEventListener("fetch", (event) => {
 ```
 
 ## cache
+In de cache bewaar ik files die ik terug wil zien, als mijn website bijvoorbeeld offline is. Dit heb ik geïmplementeerd door middel van een service worker. 
+## cache
 <img width="1200" alt="Schermafbeelding 2023-04-06 om 06 57 09" src="https://user-images.githubusercontent.com/94360732/230275650-dffafb7a-5ec8-4043-9035-6310f56cb7a2.png">
 
 # Activity Diagram
@@ -445,6 +451,7 @@ self.addEventListener("fetch", (event) => {
 
 
 # Critical Rendering Path
+Om de performance te testen heb ik de extension lighthouse gebruikt, een hele handige extension om verschillende onderdelen te testen en dan krijg je de test score terug. Ook werd er aangegeven wat ik moet verbeteren om 100% voor verschillende onderdelen te krijgen. Zie afbeeldingen voor verbeteringen en resultaten. 
 <img width="488" alt="Schermafbeelding 2023-04-05 om 18 33 37" src="https://user-images.githubusercontent.com/94360732/230275786-b16cb3fd-03ed-470b-98ca-415b45f623aa.png">
 
 <img width="478" alt="Schermafbeelding 2023-04-05 om 18 33 58" src="https://user-images.githubusercontent.com/94360732/230277696-d52488a2-1f98-4c89-8259-e6ada633c19d.png">
@@ -456,9 +463,14 @@ self.addEventListener("fetch", (event) => {
 
 <img width="1200" alt="Schermafbeelding 2023-04-06 om 00 55 29" src="https://user-images.githubusercontent.com/94360732/230275805-43ba15f0-4eff-4618-9be1-49355e42ad99.png">
 
+<img width="1036" alt="Schermafbeelding 2023-04-06 om 07 20 03" src="https://user-images.githubusercontent.com/94360732/230278771-d15fd784-9fcd-487f-a8ee-c9b56d7b8a3c.png">
 
+## extra
+wat ik nog extra heb gedaan om mijn critical rendering path te verbeteren is het minifien van mijn css en html. (zie boven bij minify, hoe ik dat precies heb gedaan)
 
 # Railway (hosting)
+voor de hosting van mijn website heb ik de applicatie railway gebruikt, je kan railway toegang geven tot je github en kan je makkelijk je repo live zetten. Heel handig! hoef ik niet steeds mijn wijzigingen door te geven aan mijn hosting. 
+Een kleine overzicht hoe railway eruit ziet:
 <img width="1435" alt="Schermafbeelding 2023-04-06 om 06 58 44" src="https://user-images.githubusercontent.com/94360732/230275852-407343a1-1336-41bf-9134-53b50ee9ae52.png">
 
 
