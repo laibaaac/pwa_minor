@@ -1,7 +1,7 @@
 const staticCacheName = 'site-static-v1';
 const assets = [
     "/offline", 
-    '/css/qt.min.css'
+    "/css/qt.min.css"
 ];
 
 self.addEventListener("install", (event) => {

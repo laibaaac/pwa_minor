@@ -2,14 +2,16 @@ const express = require('express');
 //express ophalen 
 const app = express();
 const axios = require('axios');
+const compression = require('compression');
 const port = 3000;
 // waar het op draait 
 const minifyHTML = require('express-minify-html');
 
 app.use(express.static('public'));
 app.use('/public', express.static(__dirname + '/public/'));
+app.use(compression());
 // voor mijn public files
-// app.use(express.static('Routes'));
+
 
 app.set('view engine', 'ejs');
 // hier spreek ik mijn ejs aan 
@@ -74,6 +76,7 @@ app.get('/offline', (req, res) => {
       title: 'offline',
       pageTitle: 'You are offline'
   });
+  console.log("hello")
 }); 
 
 
