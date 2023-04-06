@@ -4,4 +4,21 @@
 Voor het vak Progressive Web app, moeten wij een server side gerenderde webapplicatie maken. Ook moeten we functionaliteiten toevoegen op basis van de Service Worker. Ten slotte zullen we een reeks optimalisaties doorvoeren om de prestaties van de applicatie te verbeteren.
 Kom meekijken naar het proces achter mijn project!
 
+#Tools 
+- EJS 
+- CSS
+- JavaScript
+- Google sheet API
+- NPM
+- NodeJs
+- Express
+- Service worker 
+- SASS
+- Minify
+- Uglify,js
+
+
 # installatie
+
+## npm installeren 
+``nvm install 19.8.1``
