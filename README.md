@@ -21,4 +21,8 @@ Kom meekijken naar het proces achter mijn project!
 # installatie
 
 ## npm installeren 
-``` nvm install 19.8.1 ```
+
+```
+nvm install 19.8.1
+```
+
