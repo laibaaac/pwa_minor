@@ -447,6 +447,12 @@ self.addEventListener("fetch", (event) => {
 # Critical Rendering Path
 <img width="488" alt="Schermafbeelding 2023-04-05 om 18 33 37" src="https://user-images.githubusercontent.com/94360732/230275786-b16cb3fd-03ed-470b-98ca-415b45f623aa.png">
 
+<img width="478" alt="Schermafbeelding 2023-04-05 om 18 33 58" src="https://user-images.githubusercontent.com/94360732/230277696-d52488a2-1f98-4c89-8259-e6ada633c19d.png">
+
+<img width="476" alt="Schermafbeelding 2023-04-05 om 18 34 21" src="https://user-images.githubusercontent.com/94360732/230277708-72f805a8-b3cc-458f-abd0-5bef1982b550.png">
+
+<img width="475" alt="Schermafbeelding 2023-04-05 om 18 34 30" src="https://user-images.githubusercontent.com/94360732/230277723-baa86f6e-66e4-4a3b-8ba1-2877dacd5aae.png">
+
 
 <img width="1200" alt="Schermafbeelding 2023-04-06 om 00 55 29" src="https://user-images.githubusercontent.com/94360732/230275805-43ba15f0-4eff-4618-9be1-49355e42ad99.png">
 
